@@ -24,11 +24,11 @@ This project aims to develop a full-stack user info and login system with functi
 ### Backend API Routes
 
 - `/signup`: Create a sign-up route that accepts `{ name, username, bio, email, password }` as a response, hash the password, and store the data in the database.
-- `signupDataValidate`: Middleware that checks if the user has provided the required data and sends a response accordingly.
+- `signupValidator`: Middleware that checks if the user has provided the required data and sends a response accordingly.
 - `/login`: Create a login route that accepts `{ user, password }` as a response, generates a JWT token, sets it in a cookie, and responds with a success message.
-- `loginDataValidate`: Middleware that checks if the user has provided the required data and sends a response accordingly.
-- `/`: Create a home route that authenticates the user (use the `authenticateUser` middleware) and sends the user data.
-- `authenticateUser`: Middleware that verifies the token provided by the user through the cache and proceeds based on the output.
+- `loginValidator`: Middleware that checks if the user has provided the required data and sends a response accordingly.
+- `/`: Create a home route that authenticates the user (use the `jwtAuth` middleware) and sends the user data.
+- `jwtAuth`: Middleware that verifies the token provided by the user through the cache and proceeds based on the output.
 
 ### Frontend Pages
 
