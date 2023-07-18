@@ -1,5 +1,10 @@
 ## Instagram-like User Info and Login System
 
+
+
+https://github.com/sbsidd17/Instagram_auth_assignment/assets/122801841/29c230b4-42e3-4b08-9f80-c78374470aaf
+
+
 This project aims to develop a full-stack user info and login system with functionality similar to Instagram. The system will utilize HTML, tailwind CSS, JavaScript, and React JS for the front-end, while the back-end will be implemented using Express.js and MongoDB.
 
 ### Front-End Development
