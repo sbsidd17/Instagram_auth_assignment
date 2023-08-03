@@ -17,7 +17,7 @@ const SignIn = () => {
     e.preventDefault();
     try {
       await axios.post(
-        `${process.env.REACT_APP_BASE_URL}v1/user/login`,
+        `http://localhost:4049/v1/user/login`,
         { ...userInfo },
         {
           withCredentials: true,
@@ -80,7 +80,9 @@ const SignIn = () => {
             </button>
           </div>
           <p className="text-gray-500 mt-3 text-center text-sm">
-            Forgot Password?{" "}
+          <Link to={"/forgot-password"} className="text-blue-600 ml-3">
+          Forgot Password?
+            </Link>
             <Link to={"/signup"} className="text-blue-600 ml-3">
               Sign Up
             </Link>

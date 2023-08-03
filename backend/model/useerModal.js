@@ -15,8 +15,8 @@ const userSchema = mongoose.Schema(
       minLenght: [5, "User Name should be greater than 5 charachers"],
       maxLenght: [50, "User Name should be less than 50 charachers"],
       trim: true,
-      lovercase : true,
-      unique : true
+      lovercase: true,
+      unique: true,
     },
     email: {
       type: String,
@@ -32,11 +32,17 @@ const userSchema = mongoose.Schema(
       trim: true,
       select: false,
     },
-    bio : {
-        type : String,
-        required: [true, "Bio is required"],
-        maxLenght: [100, "Bio should be less than 100 charachers"],
-    }
+    bio: {
+      type: String,
+      required: [true, "Bio is required"],
+      maxLenght: [100, "Bio should be less than 100 charachers"],
+    },
+    profile_url: {
+      type: String,
+    },
+    forgotPasswordToken : {
+      type: String
+    },
   },
   { timestamps: true }
 );
