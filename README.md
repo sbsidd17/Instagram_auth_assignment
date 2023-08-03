@@ -1,5 +1,10 @@
 ## Instagram-like User Info and Login System
 
+
+
+https://github.com/sbsidd17/Instagram_auth_assignment/assets/122801841/29c230b4-42e3-4b08-9f80-c78374470aaf
+
+
 This project aims to develop a full-stack user info and login system with functionality similar to Instagram. The system will utilize HTML, tailwind CSS, JavaScript, and React JS for the front-end, while the back-end will be implemented using Express.js and MongoDB.
 
 ### Front-End Development
@@ -24,11 +29,11 @@ This project aims to develop a full-stack user info and login system with functi
 ### Backend API Routes
 
 - `/signup`: Create a sign-up route that accepts `{ name, username, bio, email, password }` as a response, hash the password, and store the data in the database.
-- `signupDataValidate`: Middleware that checks if the user has provided the required data and sends a response accordingly.
+- `signupValidator`: Middleware that checks if the user has provided the required data and sends a response accordingly.
 - `/login`: Create a login route that accepts `{ user, password }` as a response, generates a JWT token, sets it in a cookie, and responds with a success message.
-- `loginDataValidate`: Middleware that checks if the user has provided the required data and sends a response accordingly.
-- `/`: Create a home route that authenticates the user (use the `authenticateUser` middleware) and sends the user data.
-- `authenticateUser`: Middleware that verifies the token provided by the user through the cache and proceeds based on the output.
+- `loginValidator`: Middleware that checks if the user has provided the required data and sends a response accordingly.
+- `/`: Create a home route that authenticates the user (use the `jwtAuth` middleware) and sends the user data.
+- `jwtAuth`: Middleware that verifies the token provided by the user through the cache and proceeds based on the output.
 
 ### Frontend Pages
 
